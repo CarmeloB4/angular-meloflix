@@ -7,6 +7,7 @@ import { HomeModule } from './modules/core/home/home.module';
 import { ToolBarComponent } from './shared/components/tool-bar/tool-bar.component';
 import { FooterComponent } from './shared/components/footer/footer.component';
 import {SharedModule} from "./modules/shared/shared.module";
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 const appComponents = [
   AppComponent,
@@ -23,7 +24,7 @@ const appModules = [
 
 @NgModule({
   declarations: [...appComponents],
-  imports: [...appModules],
+  imports: [...appModules, MatToolbarModule],
   providers: [],
   bootstrap: [AppComponent]
 })
