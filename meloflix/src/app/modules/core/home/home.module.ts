@@ -8,8 +8,12 @@ import { SeriesListComponent } from './components/series-list/series-list.compon
 
 
 
+
 @NgModule({
   declarations: [ContainerComponent, LandingComponent, CardComponent, FilmListComponent, SeriesListComponent],
+  exports: [
+    ContainerComponent
+  ],
   imports: [
     CommonModule
   ]
