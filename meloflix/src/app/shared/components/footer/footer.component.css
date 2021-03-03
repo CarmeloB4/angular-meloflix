@@ -1,16 +1,15 @@
-mat-toolbar {
+footer {
   position: fixed;
   left:0;
   bottom:0;
   width:100%;
-}
-
-mat-toolbar-row {
+  height: 7vh;
   background-color: #424242;
-  justify-content: center;
+  text-align: center;
 }
 
 p {
   font-size: small;
   color: darkgrey;
+  padding: 1%;
 }
