@@ -2,13 +2,15 @@ mat-card {
   width: 200px;
 }
 
-#vote {
-  height: 25px;
-  width: 25px;
-  background-color: darkgrey;
+#vote p {
+  background-color: aliceblue;
+  color: black;
   border-radius: 50%;
+  padding: 5px;
+  font-family: Tahoma;
 }
 
-#vote p {
-  color: black;
+#year {
+  margin-top: 0;
+  padding-bottom: 2%;
 }
