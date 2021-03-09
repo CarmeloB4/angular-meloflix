@@ -1,17 +1,17 @@
 <mat-card>
-  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <img mat-card-image src="https://image.tmdb.org/t/p/w370_and_h556_bestv2/{{data.image}}" alt="{{data.title}}">
   <mat-card-content>
     <div fxLayoutAlign="start">
       <div id="year">
-        <b>2018</b>
+        <b>{{data.exitDate}}</b>
       </div>
     </div>
     <div fxLayout="row" fxLayoutAlign="space-between center" >
     <div>
-      <h3>Titolo</h3>
+      <h3>{{data.title}}</h3>
     </div>
     <div id="vote">
-      <p>7.5</p>
+      <p>{{data.vote}}</p>
     </div>
     </div>
   </mat-card-content>

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Film} from "../../../../../shared/models/film";
 
 @Component({
   selector: 'app-film-list',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./film-list.component.css']
 })
 export class FilmListComponent implements OnInit {
-
+@Input() films: Film
   constructor() { }
 
   ngOnInit(): void {
