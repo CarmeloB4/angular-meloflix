@@ -6,7 +6,7 @@ import { CardComponent } from './components/card/card.component';
 import { FilmListComponent } from './components/film-list/film-list.component';
 import { SeriesListComponent } from './components/series-list/series-list.component';
 import {SharedModule} from "../../shared/shared.module";
-import {MaterialModule} from "../../shared/material.module";
+import {IvyCarouselModule} from 'angular-responsive-carousel';
 
 
 
@@ -18,7 +18,8 @@ import {MaterialModule} from "../../shared/material.module";
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    IvyCarouselModule
   ]
 })
 export class HomeModule { }
