@@ -19,7 +19,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
   imports: [
     CommonModule,
     SharedModule,
-    IvyCarouselModule
+    IvyCarouselModule,
   ]
 })
 export class HomeModule { }

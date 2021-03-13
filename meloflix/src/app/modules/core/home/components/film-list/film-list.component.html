@@ -1,8 +1,8 @@
 <p>Film list work</p>
 <carousel>
-    <div *ngFor="let film of films">
-      <div>
+    <div *ngFor="let film of films" class="carousel-cell">
       <app-card [data]="film"></app-card>
-      </div>
     </div>
 </carousel>
+
+
