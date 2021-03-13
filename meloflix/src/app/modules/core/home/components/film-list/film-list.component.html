@@ -1,8 +1,10 @@
 <p>Film list work</p>
+<div *ngIf="films">
 <carousel>
-    <div *ngFor="let film of films" class="carousel-cell">
-      <app-card [data]="film"></app-card>
-    </div>
+  <div *ngFor="let film of films" class="carousel-cell">
+    <app-card [data]="film"></app-card>
+  </div>
 </carousel>
+</div>
 
 
