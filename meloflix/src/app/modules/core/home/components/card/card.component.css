@@ -2,11 +2,17 @@ mat-card {
   width: 200px;
 }
 
+#vote {
+  position: absolute;
+  top: 8px;
+  right: 40px;
+}
+
 #vote p {
   background-color: aliceblue;
   color: black;
   border-radius: 50%;
-  padding: 5px;
+  padding: 10px;
   font-family: Tahoma;
 }
 
