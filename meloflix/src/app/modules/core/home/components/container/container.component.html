@@ -1,5 +1,12 @@
-<p>container works!</p>
+<div id="container">
+  <div id="landing">
+    <img src="../../../../../../assets/background-landing.png" alt="Meloflix">
+  </div>
+  <div id="film-list">
+    <app-film-list [films]="data | async"></app-film-list>
+  </div>
+</div>
 
-<app-film-list [films]="data | async"></app-film-list>
+
 
 <!--<pre>{{data | async | json}}</pre>-->
