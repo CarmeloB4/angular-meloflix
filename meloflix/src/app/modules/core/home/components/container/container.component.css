@@ -1,13 +1,8 @@
 #container {
-  height: 100%;
+height: 100%;
 }
 #landing img {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-}
-
-#film-list {
-  margin-top: 2%;
-  margin-bottom: 2%;
 }
