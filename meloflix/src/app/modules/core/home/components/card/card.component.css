@@ -2,6 +2,15 @@ mat-card {
   width: 200px;
 }
 
+img.mat-card-image {
+  margin-bottom: 0;
+}
+
+mat-card-content {
+  margin-top: 0;
+  height: 30px;
+}
+
 #vote {
   position: absolute;
   top: 8px;
@@ -19,4 +28,8 @@ mat-card {
 #year {
   margin-top: 0;
   padding-bottom: 2%;
+}
+
+#title {
+  margin-bottom: 4%;
 }

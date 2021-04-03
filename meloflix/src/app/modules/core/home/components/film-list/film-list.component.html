@@ -1,6 +1,6 @@
 <h1>Now Playing FIlm</h1>
 <div *ngIf="films">
-<carousel height="400">
+<carousel height="370">
   <div *ngFor="let film of films" class="carousel-cell">
     <app-card [data]="film"></app-card>
   </div>
