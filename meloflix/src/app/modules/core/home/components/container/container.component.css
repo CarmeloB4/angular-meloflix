@@ -1,7 +1,7 @@
 #container {
 height: 100%;
 }
-#landing img {
+.landing img {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;

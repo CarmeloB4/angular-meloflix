@@ -1,6 +1,8 @@
 <div id="container">
-  <div id="landing">
-    <img src="../../../../../../assets/background-landing.png" alt="Meloflix">
+  <div *ngIf="!this.media.isActive('xs'); else mobileView">
+    <div class="landing">
+      <img src="../../../../../../assets/background-landing.png" alt="Meloflix">
+    </div>
   </div>
   <div id="film-list">
     <app-film-list [films]="data | async"></app-film-list>
@@ -11,5 +13,8 @@
 </div>
 
 
-
-
+<ng-template #mobileView>
+  <div class="landing">
+    <img src="assets/mobile-background.png" alt="Meloflix">
+  </div>
+</ng-template>

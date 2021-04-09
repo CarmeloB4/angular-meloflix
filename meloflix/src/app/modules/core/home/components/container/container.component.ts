@@ -3,6 +3,7 @@ import {DataService} from "../../services/data.service";
 import {Observable} from "rxjs";
 import {Film} from "../../../../../shared/models/film";
 import {Series} from "../../../../../shared/models/series";
+import {MediaObserver} from "@angular/flex-layout";
 
 @Component({
   selector: 'app-container',
@@ -12,7 +13,8 @@ import {Series} from "../../../../../shared/models/series";
 export class ContainerComponent implements OnInit {
 data: Observable<Film>
 series: Observable<Series>
-  constructor(private service: DataService) { }
+  constructor(private service: DataService,
+              public media: MediaObserver) { }
 
   ngOnInit(): void {
     this.data = this.service.getNowPlaying()
